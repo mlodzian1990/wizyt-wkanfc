@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moja Wizytówka NFC</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #1e1e2f, #343454);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 2rem;
+      max-width: 350px;
+      text-align: center;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    }
+
+    .avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #00d1b2;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 1.6rem;
+    }
+
+    p {
+      margin: 0.5rem 0 1rem;
+      color: #ccc;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 0.8rem;
+      margin: 0.5rem 0;
+      border: none;
+      border-radius: 12px;
+      background-color: #00d1b2;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background-color: #00b89c;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/100" alt="Avatar" class="avatar">
+    <h1>Jan Kowalski</h1>
+    <p>Web Developer | Freelancer</p>
+
+    <a href="mailto:jan.kowalski@example.com" class="btn">📧 E-mail</a>
+    <a href="tel:+48123456789" class="btn">📞 Zadzwoń</a>
+    <a href="https://www.linkedin.com/in/jankowalski" class="btn">🔗 LinkedIn</a>
+    <a href="https://jankowalski.dev" class="btn">🌐 Strona www</a>
+  </div>
+
+</body>
+</html>
